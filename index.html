@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        background-color: rgb(36, 21, 21);
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: rgba(2, 2, 7, 0.541) url(img/backgroundNetflix.jpg) center center no-repeat;
+        background-blend-mode: darken;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        color: white;
+    }
+    .login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .login h1{
+        font-size:3em;
+        margin-bottom: 10px;
+    }
+    .login p{
+        margin-top: 2px;
+        font-size: 1.6em;
+    }
+    .login input{
+        margin-top: 20px;
+        font-size: 1.2em;
+        padding: 12px;
+        width: 380px;
+        max-width: 400px;
+        outline: black;
+        border: none;
+    }
+    .login .btn{
+    padding: 12px;
+    font-size: 1.2em;
+    background-color: rgba(255, 0, 0, 0.856);
+    color: white;
+    border: none;
+    margin-top: 1em;
+}
+
+    section{
+        background-color: black;
+        height: 60vh;
+        width: 100vw;
+        color: white;
+        padding-top: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    section .texto{
+        width: 40%;
+        margin: 4em 2em;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2em;
+    }
+    section h1{
+        font-size: 45px;
+        margin-bottom: 2px;
+    }
+    section .texto p{
+        font-size: 25px;
+    }
+    section img{
+        margin-top: 4em;
+    }
+   header{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+    width: 90%;
+   }
+   header img{
+    margin: 2em;
+   }
+   select{
+    padding: 5px;
+    background-color:transparent;
+    color: white;
+    font-size: 15px;
+    margin: 1.5em;
+   }
+   select option{
+    background-color: gray;
+    color: white;
+   }
+   .btnEntrar{
+    background-color: rgba(255, 0, 0, 0.856);
+    font-size: 16px;
+    padding: 6px 10px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+   }
+   .duvidas{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+   }
+  
+
+   @media (max-width:370px) {
+
+   img{
+    width: 50px;
+   }
+   hr{
+    display: none;
+   }
+}
+ 
+</style>
+<body>
+    <div class="container">
+        <header>
+            <a href=""><img src="img/logoNetflix.png" style="width:130px" alt=""></a>
+        <div>
+          
+                <select>
+                    <option value="Português">Português</option>
+                    <option value="Inglês">Inglês</option>
+                </select>
+    
+            <button class="btnEntrar">Entrar</button>
+        </div>
+</header>
+    <div class="login">
+        <h1>Filmes e Séries e muito mais.<br>Sem limites.</h1>
+        <p>Assista onde quiser. Cancele quando quiser.</p>
+        <span>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</span>
+        <div class="email">
+            <input type="text" placeholder="E-Mail:">
+            <button class="btn">Entrar</button>
+        </div>     
+    </div>
+    </div>
+    <section>
+        <div class="texto">
+            <h1>Aproveite na TV.</h1>
+        <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+          
+        </div>
+        <div>
+            <img src="img/tv-removebg-preview.png"style="width:300px" alt="">
+        </div>
+        
+    </section>
+    <hr>
+    <section>
+        <div>
+            <img src="img/gloob.jpg"style="width:300px; border-radius:5px;"  alt="">
+        </div>
+        <div class="texto">
+            <h1>Crie perfis para crianças.</h1>
+        <p>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+          
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="texto">
+            <h1>Assista quando quiser.</h1>
+        <p>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</p>
+          
+        </div>
+        <div>
+            <img src="img/series.jpg"style="width:300px" alt="">
+        </div>
+        
+    </section>
+    <hr>
+    <section class="duvidas">
+        <h1>Perguntas Frequentes</h1>
+    </section>
+    <footer>
+        <ul>
+            <li></li>
+        </ul>
+    </footer>
+</body>
+</html>
